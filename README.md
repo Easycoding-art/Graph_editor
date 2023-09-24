@@ -4,5 +4,4 @@ The project is a graph editor and shortest path search (Dijkstra's algorithm and
 2) In the delete mode, a right click deletes it.
 3) In move mode, right-clicking first on the circle, then on another place in the window moves the circle there.
 4) In join mode, right-clicking first on a circle, then on another circle will show an arrow from the first circle to the second.
-5) In the shortest path search mode, right-clicking first on a circle, then on another circle shows the shortest path (taking into account the characteristics of the path)
-from the first yeruga to the second yeruga, and in a separate window you can list which modes of transportation can not be used.
+5) In the shortest path search mode, right-clicking first on a circle, then on another circle shows the shortest path (taking into account the characteristics of the path) from the first circle to the second citcle, and in a separate window you can list which modes of transportation can not be used.
