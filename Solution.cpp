@@ -1,6 +1,5 @@
 ﻿// Lab3_3sem.cpp : Этот файл содержит функцию "main". Здесь начинается и заканчивается выполнение программы.
 //
-
 #include <iostream>
 //#define _CRT_SECURE_NO_WARNINGS
 #include <stdio.h>

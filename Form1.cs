@@ -246,7 +246,7 @@ void Settings_connection_create(int length, int cost, string transport) {
 
         private void load_continue_Click(object sender, System.EventArgs e) {
             string project_name = loading_project_name_value.Text;
-            if(!(File.Exists("Project_storage/" + project_name + ".txt")) ) {
+            if(!File.Exists("Project_storage/" + project_name + ".txt") ) {
                 loading_error.Visible = true;
             }
             else {
@@ -425,7 +425,7 @@ void Settings_connection_create(int length, int cost, string transport) {
         p.StartInfo.RedirectStandardInput = true;
         p.StartInfo.CreateNoWindow = true;
         // Запускаемое приложение
-        p.StartInfo.FileName = "Lab3_3sem.exe";
+        p.StartInfo.FileName = "Solution.exe";
         //p.StartInfo.FileName = "example.exe";
 
         // Передаем необходимые аргументы
@@ -481,8 +481,6 @@ void Settings_connection_create(int length, int cost, string transport) {
                 gr.DrawLine(pen, Convert.ToInt32(data[2]), Convert.ToInt32(data[3]), Convert.ToInt32(data[2]) + Convert.ToInt32(d*cos), Convert.ToInt32(data[3]) - Convert.ToInt32(d*sin));
             }
         }
-        
-        problem.Invalidate();
     }
 
     private void problem_Click(object sender, EventArgs e) {
@@ -498,6 +496,7 @@ void Settings_connection_create(int length, int cost, string transport) {
             problem.Show();
             blocked = transport_choice_name_value.Text;
             transport_choice.Dispose();
+            problem.Invalidate();
     }
 
     private void transport_choice_Click(object sender, MouseEventArgs e) {
